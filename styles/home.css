@@ -1,3 +1,90 @@
+h1 {
+    font-size: 68px;
+    line-height: 1.3em;
+}
+
+h2 {
+    font-size: 42px;
+    line-height: 1.380em;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 1.333em;
+}
+
+h4 {
+    font-size: 22px;
+    line-height: 1.272em;
+}
+
+h5 {
+    font-size: 18px;
+    line-height: 1.333em;
+}
+
+h6 {
+    font-size: 16px;
+    line-height: 1.375em;
+}
+
+
+
+p {
+    font-size: 18px;
+    line-height: 1.777em;
+}
+
+p.small {
+    font-size: 15px;
+    line-height: 1.600em;
+}
+
+p.large {
+    font-size: 22px;
+    line-height: 1.818em;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+header > nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header > nav > ul > li {
+    margin-right: 40px;
+}
+
+header > div {
+    display: flex;
+    align-items: center;
+}
+
+header > div > svg {
+    margin-right: 12px;
+}
+
 section {
     height: 100vh;
     background-color: aliceblue;
