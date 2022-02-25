@@ -26,8 +26,13 @@ h4 {
 }
 
 h5 {
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.333em;
+  /*sunil*/
+  color: #14142b;
+  font-weight: 700;
+  margin-bottom: 1rem;
+
 }
 
 h6 {
@@ -180,6 +185,9 @@ in
     h4{
       font-size: 1.25rem;
     }
+    h5{
+      font-size: 1rem;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -192,6 +200,11 @@ in
       margin-bottom: 1rem;
     }
 
+    h5{
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
     /* section#banner {
       flex-direction: row;
     } */
@@ -202,6 +215,10 @@ in
     h1, section#banner h2 {
         font-size: 4.25rem;
         margin-bottom: 1.5rem;
+    }
+    h5{
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
     }
 }
 
