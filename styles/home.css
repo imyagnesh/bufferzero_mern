@@ -52,6 +52,8 @@ p.large {
 
 a {
   text-decoration: none;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   color: inherit;
 }
 
@@ -180,6 +182,9 @@ in
     h4{
       font-size: 1.25rem;
     }
+    a{
+      font-size: 1.125;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -190,6 +195,10 @@ in
     h4{
       font-size: 1.375rem;
       margin-bottom: 1rem;
+    }
+    a{
+      font-size: 1.5rem;
+      line-height: 1em;
     }
 
     /* section#banner {
@@ -202,6 +211,10 @@ in
     h1, section#banner h2 {
         font-size: 4.25rem;
         margin-bottom: 1.5rem;
+    }
+    a{
+      font-size: 1.5rem;
+      line-height: 1em;
     }
 }
 
