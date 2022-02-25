@@ -107,10 +107,18 @@ section {
 section#banner {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 64px;
+  
 }
 
 section#banner > div {
   width: 50%;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 
@@ -183,6 +191,10 @@ in
       font-size: 1.375rem;
       margin-bottom: 1rem;
     }
+
+    /* section#banner {
+      flex-direction: row;
+    } */
     
 }
 
