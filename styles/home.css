@@ -20,6 +20,7 @@ h3, section#banner h1 {
 h4 {
   font-size: 1.125rem;
   line-height: 1.272em;
+  margin-top: 0;
   margin-bottom: 0.5rem;
   color: #14142b;
   font-weight: 700;
@@ -60,32 +61,43 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  background-color: transparent;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+header > div.container {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: transparent;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  
 }
 
-header > nav > ul {
+
+header > div.container > nav > ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex;
+  display: none;
+  /* display: flex; */
 }
 
-header > nav > ul > li {
+header > div.container > nav > ul > li {
   margin-right: 40px;
 }
 
-header > div {
-  display: flex;
+
+
+header > div.container > div {
+  display: none;
   align-items: center;
 }
 
-header > div > svg {
+header > div.container > div > svg {
   margin-right: 12px;
 }
 
@@ -100,8 +112,17 @@ section {
   }
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-
+.container {
+  max-width: 1248px;
+  width: 100%;
+  margin: 0 auto;
+}
 
 
 section#banner {
@@ -109,16 +130,22 @@ section#banner {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 64px;
-  
+  height: 100vh;
 }
 
 section#banner > div {
-  width: 50%;
+  flex: 1;
   min-width: 320px;
   display: flex;
   flex-direction: column;
-  
+}
+
+section#banner > div:nth-child(2) {
+  align-items: flex-end;
+}
+
+section#banner > div > img {
+  width: 80%;
 }
 
 
@@ -149,6 +176,60 @@ section#banner > div {
 .btn.secondary {
   color: #4e4b66;
   background-color: #f6f7ff;
+}
+
+
+
+section .service-header h3,
+section .service-header p {
+  width: 640px;
+  text-align: center;
+}
+
+section#service .sevice-info {
+  position: relative;
+  height: 600px;
+}
+
+section#service .back-section {
+  position: absolute;
+  height: 600px;
+  width: 300px;
+  top: 0;
+  left: 0;
+  background-color: aqua;
+  z-index: -1
+  ;
+}
+
+section#service .service-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section#service .service-item-container {
+  display: flex;
+  gap: 1.75rem;
+  padding: 0.875rem 0;
+  background-color: transparent;
+}
+
+/* Service Section */
+section#service .service-item {
+  display: flex;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+}
+
+
+section#service .service-item > .service-icon {
+  padding-right: 1rem;
+}
+
+section#service .service-item > .service-icon > svg {
+  border-radius: 1rem;
 }
 
 /* Fix sizes */
@@ -192,9 +273,20 @@ in
       margin-bottom: 1rem;
     }
 
-    /* section#banner {
+    section#banner {
       flex-direction: row;
-    } */
+    }
+    header > div.container > nav > ul { 
+      display: flex;
+    }
+
+    header > div.container > div {
+      display: flex;
+    }
+
+    header > div.container > nav > div.menu-icon {
+      display: none;
+    }
     
 }
 
@@ -240,5 +332,9 @@ Desktop First
 } 
 
 */
+
+
+
+
 
 
